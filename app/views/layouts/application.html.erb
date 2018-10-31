@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>TheGossipProject</title>
     <%= csrf_meta_tags %>
@@ -9,7 +10,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <header>
+    <%= render "header" %>
+  </header>
+
   <body>
-    <%= yield %>
+      <div class="center jumbotron">
+      <h1>Bienvenue !</h1>
+      <h3>
+      Ici, tu peux retrouver les moussaillons 🎓
+      </h3>
+      <%= link_to "Enregistre-toi !", '#', class: "btn btn-lg btn-primary" %>
+      </div>
   </body>
 </html>
